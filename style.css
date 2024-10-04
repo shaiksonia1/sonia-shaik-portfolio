@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #eceeec; 
+}
+body{
+    display: flex;
+    background-image: url(./mypic2.jpg);
+    background-size: 55% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 110vh; 
+    width: 100vw;
+    background-size: fill;
+}
+
+.navbar-container {
+    width: 95vw;
+    display: flex;
+    margin: 2rem;
+    justify-content: center; 
+    background-color: #1A1A1A; 
+}
+
+.navbar {
+    width: 90vw; 
+    max-width: 1200px; /* Ensures the navbar doesn’t get too wide on larger screens */
+    height: 9vh; /* Height for the navbar */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #1A1A1A; /* Ensure navbar background matches */
+    padding: 0 2rem; /* Padding to keep content inside nicely spaced */
+}
+
+.brand {
+    color: #fff; /* White color for the brand text */
+    font-size: 1.5rem;
+    font-family: "Castoro", serif; /* Serif font for the brand name */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem; 
+}
+
+.nav-links li a {
+    color: #d4d6d4; 
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.nav-links li a:hover {
+    color: #fff; /* Change to white on hover */
+}
+
+.intro {
+    margin-left: 6rem; /* Margin from the left */
+    display: flex; 
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically within the container */
+    align-items: flex-start; /* Align items to the start (left) */
+    height: 90vh; /* Ensure the container takes the full height of the viewport */
+}
+
+.intro .intro-1 {
+    font-size: 1.3rem;
+    color: #c93f1d;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.intro .intro-2 {
+    font-size: 4rem;
+    width: 40vw; /* Width of the second intro */
+    display: block;
+    font-family: "Castoro", serif;
+}
+.buttons {
+    /* margin-top: rem; */
+    display: flex;
+    gap: 1rem; 
+    text-align: center;
+    width: 60vw;
+}
+
+.btn1 {
+    background-color: #1A1A1A; 
+    color: #fbfcfb; 
+    text-transform: uppercase; 
+    height: 4vw;
+    letter-spacing: 0.2rem;
+    width: 15vw;
+    font-weight: 500;
+
+    font-size: 0.8rem; 
+    border: none;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    cursor: pointer; 
+}
+
+.btn1:hover {
+    background-color: #c93f1d; /* Background color on hover */
+    color: #fbfcfb; /* Text color on hover */
+}
+
+.btn2 {
+    background-color: #fbfcfb; /* Initial background color for Button 2 */
+    color: #1A1A1A; /* Text color */
+    text-transform: uppercase; /* Uppercase text */
+    height: 4vw; /* Height of the button */
+    letter-spacing: 0.2rem; /* Spacing between letters */
+    width: 15vw; 
+    font-weight: 500;
+    font-size: 0.8rem; 
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    cursor: pointer; 
+}
+
+.btn2:hover {
+    background-color: #1A1A1A; 
+    color: #fbfcfb;
+}
+
+.btn3{
+    background-color: #fbfcfb;
+    text-transform: uppercase; 
+    font-weight: 500;
+    font-size: 0.8rem; 
+    letter-spacing: 0.1rem;
+    height: 4vw; 
+    width: 10vw;
+    margin-left: 15rem;
+}
+.icons-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.social-icons {
+    display: flex; /* Use flexbox for the icons */
+    flex-direction: column; /* Stack icons vertically */
+    gap: 1rem; /* Space between icons */
+    font-size: 1.5rem; /* Size of the icons */
+    color: #fff; /* Color of the icons */
+    margin-left: auto; /* Push icons to the right */
+    margin-right: 5rem;
+}
+
+.social-icons a {
+    color: #fbfcfb; /* Icon color */
+}
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fbfcfb;
+}
+.content-page1{
+    margin-right: 6rem;
+
+    margin-left: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.head1{
+    margin-left: 1rem;
+    margin-top: 16rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: "Castoro", serif;
+}
+.aboutme{
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    padding: 1rem;
+}
