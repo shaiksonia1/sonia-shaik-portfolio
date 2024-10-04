@@ -8,9 +8,10 @@
 }
 
 body, html {
-    width: 100%;
+    width:100%;
     height: 100%;
     background-color: #eceeec; 
+    scroll-behavior: smooth;
 }
 body{
     display: flex;
@@ -18,23 +19,27 @@ body{
     background-size: 55% 100%;
     background-repeat: no-repeat;
     background-position: right;
-    height: 110vh; 
+    height: 120vh; 
     width: 100vw;
     background-size: fill;
+}
+#main{
+    height: 100vh;
 }
 
 .navbar-container {
     width: 95vw;
     display: flex;
     margin: 2rem;
+    justify-content: center;
     justify-content: center; 
     background-color: #1A1A1A; 
 }
 
 .navbar {
-    width: 90vw; 
+    width: 100vw; 
     max-width: 1200px; /* Ensures the navbar doesn’t get too wide on larger screens */
-    height: 9vh; /* Height for the navbar */
+    height: 8vh; /* Height for the navbar */
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -45,7 +50,7 @@ body{
 .brand {
     color: #fff; /* White color for the brand text */
     font-size: 1.5rem;
-    font-family: "Castoro", serif; /* Serif font for the brand name */
+    font-family: "Castoro", serif; 
 }
 
 .nav-links {
@@ -66,12 +71,13 @@ body{
 }
 
 .intro {
-    margin-left: 6rem; /* Margin from the left */
+    margin-left: 4rem; /* Margin from the left */
+    margin-right: 4rem; /* Margin from the left */
     display: flex; 
     flex-direction: column; /* Stack items vertically */
     justify-content: center; /* Center items vertically within the container */
     align-items: flex-start; /* Align items to the start (left) */
-    height: 90vh; /* Ensure the container takes the full height of the viewport */
+    height: 100vh; /* Ensure the container takes the full height of the viewport */
 }
 
 .intro .intro-1 {
@@ -88,7 +94,6 @@ body{
     font-family: "Castoro", serif;
 }
 .buttons {
-    /* margin-top: rem; */
     display: flex;
     gap: 1rem; 
     text-align: center;
@@ -103,8 +108,7 @@ body{
     letter-spacing: 0.2rem;
     width: 15vw;
     font-weight: 500;
-
-    font-size: 0.8rem; 
+    font-size: 0.9rem; 
     border: none;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
     cursor: pointer; 
@@ -123,7 +127,7 @@ body{
     letter-spacing: 0.2rem; /* Spacing between letters */
     width: 15vw; 
     font-weight: 500;
-    font-size: 0.8rem; 
+    font-size: 0.9rem; 
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
     cursor: pointer; 
 }
@@ -133,16 +137,24 @@ body{
     color: #fbfcfb;
 }
 
-.btn3{
-    background-color: #fbfcfb;
+.btn3 { 
+    border: 1px solid #eceeec;
+    background-color:transparent;
+    color: #eceeec;
     text-transform: uppercase; 
     font-weight: 500;
-    font-size: 0.8rem; 
+    font-size: 0.9rem; 
     letter-spacing: 0.1rem;
     height: 4vw; 
-    width: 10vw;
+    width: 13vw;
     margin-left: 15rem;
 }
+ .link{
+    text-decoration: none;
+    color: #eceeec;
+ }
+
+
 .icons-container{
     display: flex;
     flex-direction: column;
@@ -155,34 +167,671 @@ body{
     font-size: 1.5rem; /* Size of the icons */
     color: #fff; /* Color of the icons */
     margin-left: auto; /* Push icons to the right */
-    margin-right: 5rem;
 }
 
 .social-icons a {
     color: #fbfcfb; /* Icon color */
 }
-.page1{
-    height: 100vh;
+#page1{
+    height: 140vh;
     width: 100vw;
     background-color: #fbfcfb;
 }
+
+
+
 .content-page1{
     margin-right: 6rem;
-
     margin-left: 6rem;
     display: flex;
     flex-direction: column;
 }
 .head1{
     margin-left: 1rem;
-    margin-top: 16rem;
-    margin-bottom: 4rem;
-    font-size: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
     font-weight: 300;
     font-family: "Castoro", serif;
 }
 .aboutme{
     font-size: 1.5rem;
-    margin-top: 3rem;
+    font-weight: 300;
+    margin-top: 2rem;
     padding: 1rem;
+    line-height: 2.5rem;
+}
+.vertical-line {
+    width: 0.1vw; /* Thickness of the vertical line */
+    height: 10vh; /* Height of the vertical line */
+    background-color: #fff; /* Color of the vertical line */
+    margin-top: 1rem; 
+    margin-left: 0.5rem;
+}
+
+.sub-container{
+    margin-top: 3rem;
+    display: flex;
+}
+.content-1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+}
+.sub-head{
+    font-family: "Castoro", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+
+}
+.lists{
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    list-style: none;
+}
+.sub-lists{
+    font-size: 1rem;
+    color: #767776;
+}
+
+span{
+    color: #c93f1d;
+    font-weight: 800;
+}
+#page2{
+    width: 100vw;
+    height: 300vh;
+    background-color:#fbfcfb;
+    
+
+}
+.head2{
+    margin-left: 6rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: "Castoro", serif;
+
+}
+/* Container for image and overlay text */
+.img-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 6rem;
+    overflow: hidden; /* Ensure content stays within bounds */
+    
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1A1A1A; /* Solid black background */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+/* Style for the images */
+.img1 {
+    display: block;
+    width: 40vw;
+    height: 100vh;
+    transition: filter 0.3s ease; /* Smooth transition for blur effect */
+}
+
+/* When hovering over the image, apply blur */
+
+
+/* Overlay text styles */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #d4d6d4; /* Text color */
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: 200;
+    font-family: "Public Sans", sans-serif;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for text appearance */
+}
+
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+.img-container:hover .overlay-text {
+    opacity: 2; /* Show text when hovering */
+}
+.sub-contents{
+    display: flex;
+    flex-direction: column;
+}
+.head3{
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    font-family: "Castoro", serif;
+
+}
+.section{
+    display: flex;
+}
+.content-2{
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    
+}
+.sub-heading{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 300;
+
+}
+.para1{
+    width: 20vw;
+
+    padding-top: 2rem;
+    font-size: 1rem;
+
+
+}
+#page3{
+    overflow: hidden;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: #1A1A1A;
+}
+
+.head4{
+
+    padding-top: 6rem;
+    margin-left: 6rem;
+    font-size: 2.5rem;
+    color: #eceeec;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    font-family: "Castoro", serif;
+}
+.footer-content{
+    overflow: hidden;
+    display: flex;
+    width: 100vw;
+    
+}
+.footer{
+    overflow: hidden;
+
+    display: flex;
+    width: 100vw;
+    margin-right: 1rem;
+}
+.para2{
+    /* margin-right: 3rem; */
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: #767776;
+    margin-left: 6rem;
+    text-align: left;
+    height: 50vh;
+    width: 25vw;
+}
+
+
+.heading3{
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: #767776;
+    margin-left: 6rem;
+    text-align: left;
+    height: 50vh;
+    width: 25vw; 
+}
+
+.btn4{
+    margin-left: 6rem;
+    background-color: #c93f1d; /* Initial background color for Button 2 */
+    color: #1A1A1A; /* Text color */
+    text-transform: uppercase; /* Uppercase text */
+    height: 4vw; /* Height of the button */
+    letter-spacing: 0.2rem; /* Spacing between letters */
+    width: 35vw; 
+    font-weight: 500;
+    font-size: 0.9rem; 
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    cursor: pointer; 
+}
+
+.btn5{
+    border: 1px solid #eceeec;
+    background-color:transparent;
+    color: #eceeec;
+    text-transform: uppercase; 
+    font-weight: 500;
+    font-size: 0.9rem; 
+    letter-spacing: 0.1rem;
+    height: 4vw; 
+    width: 35vw;
+    margin-left: 15rem;
+}
+hr{
+    margin-left: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    width: 90vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 320px){
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    body {
+        display: flex;
+        background-image: url(./mypic2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 130vh; 
+        width: 100vw;
+    }
+    .navbar-container {
+        width: 35vw;
+        display: flex;
+        margin-left: 6rem;
+        justify-content: center;
+        background-color: #1A1A1A; 
+    }
+    
+    .navbar {
+        width: 100vw; 
+        height: 8vh; 
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        background-color: #1A1A1A; 
+        padding: 0 2rem;
+    }
+    .nav-links li a {
+        color: #d4d6d4; 
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 0.8rem;
+    }
+    .brand {
+        color: #fff;
+        font-size: 0.6rem;
+        font-family: "Castoro", serif; 
+    }
+    .social-icons{
+        display: none;
+    }
+    .intro{
+        margin-left: 1.5rem;
+    }
+    .intro .intro-1 {
+        margin-top: 4rem;
+        font-size: 1rem;
+        color: #c93f1d;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .intro .intro-2 {
+        font-size: 2rem;
+        color: #eceeec;
+        width: 80vw;
+        font-family: "Castoro", serif;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; 
+        text-align: center;
+        width: 60vw;
+    }
+    
+    .btn1 {
+        background-color: #1A1A1A; 
+        color: #fbfcfb; 
+        text-transform: uppercase; 
+        height: 8vw;
+        letter-spacing: 0.2rem;
+        width: 75vw;
+        font-weight: 500;
+        font-size: 0.8rem; 
+        border: none;
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer; 
+    }
+    
+    .btn2 {
+        background-color: #fbfcfb;
+        color: #1A1A1A;
+        text-transform: uppercase;
+        height: 8vw;
+        letter-spacing: 0.2rem;
+        width: 75vw; 
+        font-weight: 500;
+        font-size: 0.8rem; 
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer; 
+    }
+    .btn3 {
+        background-color: transparent;
+        border: none;
+        text-transform: uppercase; 
+        font-weight: 500;
+        font-size: 1rem; 
+        letter-spacing: 0.1rem;
+        height: 8vw; 
+        width: 35vw;
+    }
+    #page1{
+        height: 300vh;
+        width: 100vw;
+        background-color: #fbfcfb;
+    }
+    
+    .content-page1{
+        margin-right: 2rem;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .head1{
+        margin-left: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        font-weight: 300;
+        font-family: "Castoro", serif;
+    }
+    .aboutme{
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 2rem;
+        padding: 1rem;
+        line-height: 1.5rem;
+    }
+ 
+    .sub-container{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+    .sub-head{
+        font-family: "Castoro", serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+    }
+    .lists{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        list-style: none;
+    }
+    .sub-lists{
+        font-size: 0.8rem;
+        color: #767776;
+    }
+    
+    span{
+        color: #c93f1d;
+        font-weight: 800;
+    }
+    #page2{
+        height: 300vh;
+        background-color:#fbfcfb;
+    }
+    .head2{
+        padding-top: 7rem;
+        margin-left: 2rem;
+        font-size: 3rem;
+        font-weight: 300;
+        font-family: "Castoro", serif;
+    }
+    .img-container {
+        position: relative;
+        display: inline-block;
+        margin-left: 2rem;
+        overflow: hidden;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1A1A1A;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .img1 {
+        display: block;
+        width: 80vw;
+        height: 60vh;
+        transition: filter 0.3s ease;
+    }
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #d4d6d4;
+        font-size: 1.5rem;
+        font-weight: 200;
+        font-family: "Public Sans", sans-serif;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .img-container:hover .overlay {
+        opacity: 1;
+    }
+    
+    .img-container:hover .overlay-text {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+   html,body{
+        width: 100%;
+        height: 70vw;
+    }
+    body{
+        display: flex;
+        background-image: url(./mypic2.jpg);
+        background-size:  100%;
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 100vh; 
+        width: 100vw;
+        background-size: fill;
+    }
+    .navbar-container {
+        width: 85vw;
+        display: flex;
+        margin: 2rem;
+        justify-content: center;
+        justify-content: center; 
+        background-color: #1A1A1A; 
+    }
+    
+    .navbar {
+        width: 100vw; 
+        max-width: 1200px; /* Ensures the navbar doesn’t get too wide on larger screens */
+        height: 8vh; /* Height for the navbar */
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        background-color: #1A1A1A; /* Ensure navbar background matches */
+        padding: 0 2rem; /* Padding to keep content inside nicely spaced */
+    }
+    
+
+  
+    
+    .social-icons{
+        display: none;
+    }
+    
+    .intro .intro-1 {
+        margin-top: 4rem;
+        font-size: 1rem;
+        color: #eceeec;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .intro .intro-2 {
+        font-size: 3rem;
+        color: #eceeec;
+        width: 80vw; /* Width of the second intro */
+        font-family: "Castoro", serif;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; 
+        text-align: center;
+        width: 60vw;
+    }
+    
+    .btn1 {
+        background-color: #1A1A1A; 
+        color: #fbfcfb; 
+        text-transform: uppercase; 
+        height: 8vw;
+        letter-spacing: 0.2rem;
+        width: 75vw;
+        font-weight: 500;
+        font-size: 0.8rem; 
+        border: none;
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+        cursor: pointer; 
+    }
+    
+  
+    
+    .btn2 {
+        background-color: #fbfcfb; /* Initial background color for Button 2 */
+        color: #1A1A1A; /* Text color */
+        text-transform: uppercase; /* Uppercase text */
+        height: 8vw; /* Height of the button */
+        letter-spacing: 0.2rem; /* Spacing between letters */
+        width: 75vw; 
+        font-weight: 500;
+        font-size: 0.8rem; 
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+        cursor: pointer; 
+    }
+    .btn3{
+        background-color: transparent;
+        color: #fbfcfb;
+        border: none;
+        text-transform: uppercase; 
+        font-weight: 500;
+        font-size: 1rem; 
+        letter-spacing: 0.1rem;
+  
+    }
+    
 }
