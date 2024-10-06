@@ -13,6 +13,15 @@ body, html {
     background-color: #eceeec; 
     scroll-behavior: smooth;
 }
+.sticky {
+    margin: 0;
+    width: 100%; 
+    z-index: 9999; /* Ensure it stays on top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 body{
     display: flex;
     background-image: url(./mypic2.jpg);
@@ -245,12 +254,13 @@ span{
 }
 #page2{
     width: 100vw;
-    height: 300vh;
+    height: 330vh;
     background-color:#fbfcfb;
     
 
 }
 .head2{
+    padding-top: 10rem;
     margin-left: 6rem;
     margin-bottom: 5rem;
     font-size: 4rem;
@@ -314,6 +324,7 @@ span{
 .sub-contents{
     display: flex;
     flex-direction: column;
+    
 }
 .head3{
     text-align: center;
@@ -327,6 +338,7 @@ span{
 }
 .section{
     display: flex;
+    margin-left: 2rem;
 }
 .content-2{
     height: 30vh;
@@ -352,7 +364,6 @@ span{
 }
 #page3{
     overflow: hidden;
-
     height: 100vh;
     width: 100vw;
     background-color: #1A1A1A;
@@ -362,10 +373,9 @@ span{
 
     padding-top: 6rem;
     margin-left: 6rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #eceeec;
-    letter-spacing: 0.1rem;
-    font-weight: 300;
+    font-weight: 100;
     font-family: "Castoro", serif;
 }
 .footer-content{
@@ -408,12 +418,12 @@ span{
 .btn4{
     margin-left: 6rem;
     background-color: #c93f1d; /* Initial background color for Button 2 */
-    color: #1A1A1A; /* Text color */
+    color: #eceeec; /* Text color */
     text-transform: uppercase; /* Uppercase text */
     height: 4vw; /* Height of the button */
     letter-spacing: 0.2rem; /* Spacing between letters */
     width: 35vw; 
-    font-weight: 500;
+    font-weight: 200;
     font-size: 0.9rem; 
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
     cursor: pointer; 
@@ -431,13 +441,14 @@ span{
     width: 35vw;
     margin-left: 15rem;
 }
-hr{
-    margin-left: 3rem;
-    margin-top: 3rem;
-    text-align: center;
+.line {
+    margin-top: 5rem;
+    height: 0.1vh;
+    background-color: #767776;
     width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 
 
